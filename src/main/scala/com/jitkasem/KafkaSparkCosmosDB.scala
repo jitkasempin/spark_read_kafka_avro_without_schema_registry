@@ -46,14 +46,6 @@ object KafkaSparkCosmosDB {
 
     val dss = df.writeStream.format("console").start().awaitTermination()
 
-//                .selectExpr("CAST(value AS STRING)")
-//                .writeStream
-//                .format("csv")
-//                .option("checkpointLocation", "chkpointjittempdir")
-//                .option("path","hdfs://localhost:9000/user")
-//                .start()
-//                .awaitTermination()
-
   }
 
 
